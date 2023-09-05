@@ -1,0 +1,65 @@
+body{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient( to bottom left, lightblue , rgb(249, 90, 90)) no-repeat fixed center;
+}
+.frame{
+    height: 70vh;
+    width:280px;
+    display:grid;
+    grid-template-rows: 1.5fr 5fr;
+}
+.historybox{
+    height: 4vh;
+    overflow-x: auto;
+    font-family: "Poppins";
+    color: rgb(255, 191, 0);
+    background-color: #2f2f2f;
+    border: 5px ridge black;
+    border-bottom: 0px;
+    text-align: right;
+}
+.display{
+    overflow-x: auto;
+    font-family: "Poppins";
+    font-size: 4vh;
+    font-weight: 100;
+    color: rgb(255, 191, 0);
+    background-color: #2f2f2f;
+    border: 5px ridge black;
+    text-align: right;
+}
+.btns{
+    height: 54vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: 5px ridge #2f2f2f;
+    border-top: 0px;
+    background-color: #2f2f2f;
+}
+button{
+    font-family: "Poppins";
+    color: black;
+    font-size: 2.5vh;
+    background-color: #666666;
+    border-radius: 10px;
+    margin: 5px 5px;
+    color: rgb(254, 241, 200);
+}
+.clear{
+    grid-column-start: span 2;
+}
+.number{
+    border-radius: 6px 18px ;
+}
+.n00 , .n0 {
+    border-radius: 10px;
+}
+.increase {
+    animation: inc 1s linear ;
+}
+@keyframes inc {
+    50% {transform:scale(1.05)}    
+}

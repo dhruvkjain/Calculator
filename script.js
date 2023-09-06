@@ -23,6 +23,8 @@ let numbers=document.querySelectorAll(".number");
 let history=document.getElementsByClassName("history")[0];
 let buttons=document.querySelectorAll(".b");
 
+let cal=document.getElementsByClassName("frame")[0];
+
 // console.log(numbers);
 buttons.forEach(btns =>{
     btns.addEventListener("click",()=>{
@@ -39,8 +41,6 @@ numbers.forEach(num =>{
 ac.addEventListener("click" , ()=>{
     display.textContent="";
     history.textContent="";
-    num1="";
-    num2="";
     ans=null;
 });
 dot.addEventListener("click" , ()=>{
@@ -88,6 +88,8 @@ equal.addEventListener("click" , ()=>{
 
     display.textContent=ans;
     ans=null;
+    num1="";
+    num2="";
     history.textContent="";
     // if(operation === "/"){
     //     history.textContent="";
@@ -107,13 +109,3 @@ equal.addEventListener("click" , ()=>{
     // }
 
 });
-
-
-
-
-
-
-
-
-
-

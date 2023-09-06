@@ -63,3 +63,32 @@ button{
 @keyframes inc {
     50% {transform:scale(1.05)}    
 }
+@media only screen and (max-width:300px){
+    .frame{
+        height: 64vh;
+        width: 230px;
+        transform: translateX(-10px);
+    }
+    .btns{
+        height: 48vh;
+    }
+}
+@media only screen and (max-width:250px){
+    .frame{
+        height: 57vh;
+        width: 200px;
+    }
+    .btns{
+        height: 42vh;
+    }
+}
+@media only screen and (max-width:210px){
+    .frame{
+        height: 52vh;
+        width: 150px;
+        transform: translateX(-20px);
+    }
+    .btns{
+        height: 40vh;
+    }
+}

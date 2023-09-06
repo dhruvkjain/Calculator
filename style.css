@@ -7,9 +7,11 @@ body{
 }
 .frame{
     height: 70vh;
-    width:280px;
+    width: 280px;
     display:grid;
     grid-template-rows: 1.5fr 5fr;
+    background-color: #666666;
+    border-radius: 10px;
 }
 .historybox{
     height: 4vh;
@@ -20,6 +22,7 @@ body{
     border: 5px ridge black;
     border-bottom: 0px;
     text-align: right;
+    border-radius: 10px 10px 0px 0px;
 }
 .display{
     overflow-x: auto;
@@ -30,6 +33,7 @@ body{
     background-color: #2f2f2f;
     border: 5px ridge black;
     text-align: right;
+    border-radius: 0px 0px 10px 10px;
 }
 .btns{
     height: 54vh;
@@ -38,8 +42,9 @@ body{
     border: 5px ridge #2f2f2f;
     border-top: 0px;
     background-color: #2f2f2f;
+    border-radius: 5px 5px 10px 10px;
 }
-button{
+.b{
     font-family: "Poppins";
     color: black;
     font-size: 2.5vh;
@@ -47,7 +52,10 @@ button{
     border-radius: 10px;
     margin: 5px 5px;
     color: rgb(254, 241, 200);
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
 .clear{
     grid-column-start: span 2;
 }
@@ -63,11 +71,11 @@ button{
 @keyframes inc {
     50% {transform:scale(1.05)}    
 }
+
 @media only screen and (max-width:300px){
     .frame{
         height: 64vh;
         width: 230px;
-        transform: translateX(-10px);
     }
     .btns{
         height: 48vh;
@@ -86,7 +94,6 @@ button{
     .frame{
         height: 52vh;
         width: 150px;
-        transform: translateX(-20px);
     }
     .btns{
         height: 40vh;

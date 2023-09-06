@@ -41,6 +41,9 @@ numbers.forEach(num =>{
 ac.addEventListener("click" , ()=>{
     display.textContent="";
     history.textContent="";
+    num1="";
+    num2="";
+    operation="";
     ans=null;
 });
 dot.addEventListener("click" , ()=>{
@@ -90,6 +93,7 @@ equal.addEventListener("click" , ()=>{
     ans=null;
     num1="";
     num2="";
+    operation="";
     history.textContent="";
     // if(operation === "/"){
     //     history.textContent="";
